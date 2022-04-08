@@ -1,0 +1,148 @@
+@import './mixins/medias';
+@import './components/colors';
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+canvas {
+   visibility: visible !important;
+   height: 100vh;
+   width: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+  }
+
+body {
+	line-height: 1;
+    font-family: sans-serif;
+}
+
+
+main{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+aside {
+    position: fixed;
+    bottom: 2em;
+    height: auto;
+    box-shadow: 0 0 6em #0004;
+    padding: 2em;
+    background-color: white;
+    border-radius: .5em;
+    text-align: center;
+}
+aside:target {
+    height: 0.2em;
+    width: 0.2em;
+    overflow: hidden;
+    border-radius: 1000em;
+    box-shadow: 0 0 6em #0004;
+}
+
+.close-informations{
+    text-decoration: none;
+    position: absolute;
+    top: 0.2em;
+    right: 1em;
+   
+}
+aside:target .close-informations {
+    display: none;
+    
+}
+aside .open-informations {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+aside:target .open-informations {
+    display: block;
+}
+
+i{
+
+    padding: 25px 5px;
+    text-decoration: none;
+    color: black;
+}
+.actions{
+
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/*.slider{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+*/
+       
+
+h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+       
+}
+
+p{
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        
+        text-align: center;
+}
+
+
