@@ -69,12 +69,12 @@ for(let i = 0 ; i< (drwidth * drwheight) / (ecart*10) ; i++){
 
 
 //slider pour la scalabilité
-sliderscale = createSlider(0, 255, 100);
+sliderscale = createSlider(1, 255, 100);
 sliderscale.parent('slider');
 sliderscale.style('width', '80px');
 
   //slider pour l'opacité
-slideropacity = createSlider(0, 900, 100);
+slideropacity = createSlider(1, 900, 100);
 slideropacity.parent('slider__opacity')
 slideropacity.style('width', '80px');
 
@@ -85,6 +85,7 @@ let contenu_texte = "";
 let letter = [];
  
 function draw() {
+
   //background de fond
   if (keyIsPressed && key == '@'){
     background(random(0,255),10,100);
@@ -178,10 +179,9 @@ function draw() {
 
     
   } 
-
-
+  
   //effacer le contenu de la page
-if (keyIsPressed && key == '-'){
+if (keyIsPressed && key == '='){
     contenu_texte = ""; 
   } 
  
