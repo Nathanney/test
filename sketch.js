@@ -179,9 +179,9 @@ function draw() {
 
     
   } 
-  
+
   //effacer le contenu de la page
-if (keyIsPressed && key == '='){
+if (keyIsPressed && key == '#'){
     contenu_texte = ""; 
   } 
  
